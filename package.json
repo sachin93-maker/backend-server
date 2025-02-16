@@ -1,21 +1,20 @@
 {
   "name": "JavaCodeRunner",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Java code execution and PDF generation server",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "postinstall": "apt-get update && apt-get install -y openjdk-17-jdk",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["java", "code-runner", "pdf", "execution"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
-    "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "fs": "0.0.1-security",
     "pdfkit": "^0.16.0"
   }
 }
