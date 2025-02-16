@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "apt-get update && apt-get install -y openjdk-17-jdk",
+    "postinstall": "apt-get update && apt-get install -y openjdk-17-jdk || true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["java", "code-runner", "pdf", "execution"],
@@ -18,3 +18,4 @@
     "pdfkit": "^0.16.0"
   }
 }
+
